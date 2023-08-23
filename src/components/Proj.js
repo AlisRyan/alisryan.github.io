@@ -9,7 +9,7 @@ const Proj = ({ heading, body, vid, git }) => {
       justify="space-between"
       p="4"
       bg="white"
-      border="1px solid #e2e8f0"
+      border="1px solid #ab9e98"
       borderRadius="20px"
       mb="4"
       transition="transform 0.3s, box-shadow 0.3s"

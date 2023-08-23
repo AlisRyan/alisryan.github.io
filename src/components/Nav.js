@@ -9,9 +9,10 @@ const Nav = () => {
       left="0"
       right="0"
       zIndex="10"
-      bg="white"
+      bg="whitesmoke"
       fontSize="25px"
-      boxShadow="xl"
+      boxShadow="md"
+      borderBottom="1px solid #ab9e98"
     >
       <HStack spacing={4} justifyContent="space-between" px="10%" py={4}>
         <Link
@@ -49,35 +50,6 @@ const Nav = () => {
           }}
           class="fa fa-instagram"
           />
-          
-        {/* <HStack spacing={10}>
-          <Link
-            transition="transform 0.3s, box-shadow 0.3s ease"
-            _hover={{
-              transform: "scale(1.1)",
-            }}
-          >
-            My Listings
-          </Link>
-          <HStack bgColor="#f8f8f8" px="15px" borderRadius="20px">
-            <Hamburger />
-            <Link
-              fontSize="5px"
-              textShadow="0px 0px 2px black"
-              color="#f8f8f8"
-              borderRadius="10px"
-              transition="transform 0.3s, box-shadow 0.3s ease"
-              _hover={{
-                transform: "scale(1.1)",
-                shadow: "0px 4px 6px rgba(0, 0, 0, 0.2)",
-              }}
-            >
-              <div class="user-icon">
-                <span class="green"></span>
-              </div>{" "}
-            </Link>
-          </HStack>
-        </HStack> */}
       </HStack>
     </Box>
   );

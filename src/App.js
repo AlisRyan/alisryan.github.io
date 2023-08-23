@@ -24,6 +24,8 @@ const App = () => {
       ></link>
       <Nav />
       <Box
+      bgColor="whitesmoke"
+      color="#5e5855"
         py={10}
         mx="auto"
         maxWidth="2000px"
@@ -33,7 +35,7 @@ const App = () => {
         <VStack align="flex-start" minWidth="400px" width="100%">
           <HStack
             borderBottom="2px"
-            borderColor="gray.200"
+            borderColor="#ab9e98"
             spacing={4}
             justifyContent="space-between"
             width="100%"
@@ -78,7 +80,7 @@ const App = () => {
             pad="100px"
           />
           <Paragraph
-            heading="Check out some of the projects I've worked on!"
+            heading="Check out some of the projects that I've worked on!"
             pad="50px"
           />
           <Proj 
