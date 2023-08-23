@@ -3,6 +3,8 @@ import Nav from "./components/Nav";
 import mtn from './components/mtn.jpg'
 import cad from './components/cad.mov'
 import Proj from "./components/Proj";
+import box from "./components/box.mov";
+import bujo from "./components/bujo.mov";
 import {
   ChakraProvider,
   VStack,
@@ -97,11 +99,13 @@ const App = () => {
           body="Worked on a team of 6 developers to create a scalable web-app for Northeastern 
           startup Boxy from scratch with Typescript, Next.js, PostgreSQL, Prisma, Docker, and Tailwind CSS. I helped implement a responsive front-end design and handle creating, verifying, 
           and deleting both users and reservations from the backend database."
+          vid={box}
           />
           <Proj 
           heading="Bullet Journal"
           body="Created a bullet journal using Java and JavaFX that takes in and displays user tasks and events for a week. These tasks and events can then be stored in a file, which can be reopened to display the saved data."
           git="https://github.com/AlisRyan/bullet-journal"
+          vid={bujo}
           />
           <Proj 
           heading="Personal Website"

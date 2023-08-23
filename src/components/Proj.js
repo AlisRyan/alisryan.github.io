@@ -46,7 +46,7 @@ const Proj = ({ heading, body, vid, git }) => {
         )}
       </VStack>
       {vid && (
-        <video autoplay controls="controls" width="40%">
+        <video autoplay="autoplay" loop="loop" controls="true" muted="true" width="40%">
         <source src={vid} />
       </video>)}
       </HStack>

@@ -14,8 +14,7 @@ const Paragraph = ({ heading, body, imgSrc, pad }) => {
         <Image
           src={imgSrc}
           alt="Image"
-          boxSize="200px"
-          height="250px"
+          boxSize="25%"
           borderRadius="20%"
           objectFit="cover"
           transition="transform 0.3s ease, box-shadow 0.3s ease"
