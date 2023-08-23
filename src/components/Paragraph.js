@@ -18,8 +18,8 @@ const Paragraph = ({ heading, body, imgSrc, pad }) => {
           objectFit="cover"
           transition="transform 0.3s ease, box-shadow 0.3s ease"
             _hover={{
-              transform: "scale(1.5)",
-              boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+              transform: "scale(1.1)",
+              boxShadow: "4px 4px 6px 6px rgba(0, 0, 0, .1)",
             }}
         />
       )}

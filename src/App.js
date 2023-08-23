@@ -30,7 +30,7 @@ const App = () => {
         paddingX={{ base: "0", md: "10%" }}
         paddingTop="150px"
       >
-        <VStack align="flex-start" minWidth="500px" width="100%">
+        <VStack align="flex-start" minWidth="400px" width="100%">
           <HStack
             borderBottom="2px"
             borderColor="gray.200"
@@ -79,7 +79,6 @@ const App = () => {
           />
           <Paragraph
             heading="Check out some of the projects I've worked on!"
-            body="I've made various coding projects throughout the past year, and you can check some of my favorites out below :)."
             pad="50px"
           />
           <Proj 
