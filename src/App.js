@@ -5,6 +5,7 @@ import cad from './components/cad.mov'
 import Proj from "./components/Proj";
 import box from "./components/box.mov";
 import bujo from "./components/bujo.mov";
+import rj from "./components/rj.mov"
 import {
   ChakraProvider,
   VStack,
@@ -48,7 +49,7 @@ const App = () => {
             transition="transform 0.3s ease, box-shadow 0.3s ease, border-radius .3s ease"
             _hover={{
               transform: "scale(1.05)",
-              boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+              // boxShadow: "0px 5px 1px -1px rgba(0, 0, 0, .1)",
               borderRadius: "100px",
             }}
           >
@@ -86,13 +87,12 @@ const App = () => {
             pad="50px"
           />
           <Proj 
-          heading="Cadence matcher"
-          body="This is a web app I made with Javascript, React.js, and the Spotify API so that a user can create a custom
-          Spotify playlist that suits their running needs. It allows you to select your favorite playlists, and 
-          your ideal running tempo and ideal levels of happiness, energy, and danceability for your given playlists, and then 
-          creates a new playlist with the selected tracks that fit those criteria."
-          vid={cad}
-          git="https://github.com/AlisRyan/cadence-matcher"
+          heading="Run Jam"
+          body="An iOS app made with Swift, SwiftUI, the Spotify iOS SDK and the Core Motion framework that plays songs
+          from your selected Spotify playlists that have a tempo closest to your current running cadence."
+          vid={rj}
+          git="https://github.com/AlisRyan/RunJam"
+          fit="3"
           />
           <Proj 
           heading="Boxy"
@@ -100,29 +100,44 @@ const App = () => {
           startup Boxy from scratch with Typescript, Next.js, PostgreSQL, Prisma, Docker, and Tailwind CSS. I helped implement a responsive front-end design and handle creating, verifying, 
           and deleting both users and reservations from the backend database."
           vid={box}
+          fit="1"
+          />
+          <Proj 
+          heading="Cadence matcher"
+          body="A web app made with Javascript, React.js, and the Spotify API so that a user can create a custom
+          Spotify playlist that suits their running needs. It allows you to select your favorite playlists, and 
+          your ideal running tempo and ideal levels of happiness, energy, and danceability for your given playlists, and then 
+          creates a new playlist with the selected tracks that fit those criteria."
+          vid={cad}
+          git="https://github.com/AlisRyan/cadence-matcher"
+          fit="1"
           />
           <Proj 
           heading="Bullet Journal"
           body="Created a bullet journal using Java and JavaFX that takes in and displays user tasks and events for a week. These tasks and events can then be stored in a file, which can be reopened to display the saved data."
           git="https://github.com/AlisRyan/bullet-journal"
           vid={bujo}
+          fit="1"
           />
           <Proj 
           heading="Personal Website"
           body="Created this static website to display some information about me and my projects using Javascript, React.js, and Chakra UI.
           "
           git="https://github.com/AlisRyan/alisryan.github.io"
+          fit="1"
           />
                     <Proj 
           heading="Battleship"
           body="Made a playable command-line game of battle salvo with Java that can be played with different sized boards and numbers of ships. Can be played either as single-player against an algorithm or multiplayer.
           "
           git="https://github.com/AlisRyan/battle-salvo"
+          fit="1"
           />
           <Proj 
           heading="Maze"
           body=
           "Created a program that randomly generates a maze which can then be solved with either breadth-first-search or depth-first search."
+          fit="1"
           />
         </VStack>
       </Box>

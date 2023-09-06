@@ -1,7 +1,7 @@
 import React from "react";
 import { VStack, Box, Text, HStack, Link } from "@chakra-ui/react";
 
-const Proj = ({ heading, body, vid, git }) => {
+const Proj = ({ heading, body, vid, git, fit }) => {
 
   return (
     <VStack
@@ -23,32 +23,29 @@ const Proj = ({ heading, body, vid, git }) => {
         {heading}
       </Text>
       <HStack>
-      <VStack display="flex" alignItems="left">
-        <Text
-          fontSize="sm"
-          borderRadius="md"
-          px="20px"
-          py="5px"
-          fontWeight="500"
-        >
-          {body}
-        </Text>
-        {git && (
-          <Box
-          fontSize="20px"
-          px="20px"
+        <VStack display="flex" alignItems="left" flex={fit}>
+          <Text
+            fontSize="sm"
+            borderRadius="md"
+            px="20px"
+            py="5px"
+            fontWeight="500"
           >
-          <Link
-          href={git}
-          class="fa fa-github"
-          />
-          </Box>
+            {body}
+          </Text>
+          {git && (
+            <Box fontSize="20px" px="20px">
+              <Link href={git} className="fa fa-github" />
+            </Box>
+          )}
+        </VStack>
+        {vid && (
+          <div style={{ flex: "1" }}>
+            <video autoPlay loop controls muted>
+              <source src={vid} />
+            </video>
+          </div>
         )}
-      </VStack>
-      {vid && (
-        <video autoplay="autoplay" loop="loop" controls="true" muted="true" width="40%">
-        <source src={vid} />
-      </video>)}
       </HStack>
     </VStack>
   );
