@@ -74,7 +74,7 @@ const App = () => {
           paddingBottom="3000px"
             heading="Hello!"
             body="My name's Alison Ryan and I'm a sophomore at Northeastern University 
-            majoring in computer science and mathematics. I'm currently seeking software engineering
+            majoring in computer science and mathematics. I'm currently seeking
             internships for this coming Spring and Summer, and below you can check out some
             projects I've worked on in the past! I truly enjoy working on computer science endeavors
             not just for my love of coding, but also for my passion of creation. Some other things that I enjoy
